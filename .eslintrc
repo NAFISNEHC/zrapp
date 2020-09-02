@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "taro"
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "Taro|[tarojs]|[I]"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "no-extra-label:":0,
+    "no-lone-blocks":2,
+    "no-multi-spaces":2,
+    "max-len":[1,200],
+    "max-nested-callbacks": [1,5],
+    "linebreak-style": [1,"unix"],
+    "eol-last":2,
+    "block-spacing":[1,"never"],
+    "array-bracket-spacing": [2,"never"],
+    "eqeqeq": ["error", "always"],
+    "no-multiple-empty-lines": "error",
+    "jsx-quotes": ["error", "prefer-double"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}

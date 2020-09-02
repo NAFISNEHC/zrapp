@@ -1,0 +1,85 @@
+@import "../../../../node_modules/taro-ui/dist/style/components/flex";
+$bgColor: #f6f6f6;
+$FontColor: #fff;
+.title {
+  padding: 64px 0px;
+  background-color: #505eb4;
+  width: 100%;
+  height: 208px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  .select-city {
+  	position: absolute;
+  	font-size: 27px;
+  	color: white;
+  	margin-top: -48px;
+  	margin-left: 4%;
+  }
+  .title-text {
+    .title-left {
+      font-size: 41.6px;
+      height: 57.6px;
+      color: $FontColor;
+      border-right: 1px solid #e1e1e1;
+      padding: 0px 19.2px;
+    }
+    .title-right {
+      margin-left: 19.2px;
+      margin-top: -3.2px;
+      background-color: red;
+      border-radius: 1.6px;
+      height: 67.2px;
+      line-height: 33.6px;
+      width: 217.6px;
+      text-align: justify;
+      padding: 0px 12.8px;
+      font-size: 20.8px;
+      letter-spacing: 3.2px;
+      color: $FontColor;
+    }
+  }
+  .title-search {
+    padding: 38.4px 4%;
+    width: 92%;
+    height: 57.6px;
+    .search-wrapper {
+      width: 97%;
+      height: 54.4px;
+      border-radius: 6.4px;
+      background-color: #fff;
+      padding: 12.8px 3.2px 12.8px 19.2px;
+      float: left;
+      display: flex;
+      line-height: 54.4px;
+      .search-input {
+        width: 100%;
+        height: 44.8px;
+        margin: calc((54.4px - 44.8px)/2) 0px calc((54.4px - 44.8px)/2) 16px;  
+        vertical-align: middle;
+        font-size: 24px;
+        text-align: left;
+        letter-spacing: 1.6px;
+      }
+    }
+  }
+  .title-hot {
+   margin: 16px 4% 12.8px 4%;
+    .hot-text {
+      color: $FontColor;
+      font-size: 22.4px;
+      padding-top: 9px;
+      float: left;
+    }
+    .hot-wrapper {
+      float: right;
+      .hot-btn {
+        font-size: 22.4px;
+        margin-left: 3.2px;
+        color: $FontColor;
+      }
+    }
+  }
+}

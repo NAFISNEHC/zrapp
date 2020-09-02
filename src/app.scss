@@ -1,0 +1,105 @@
+@import url("./asset/fonts/iconfont.scss");
+
+$fontSize: 26px;
+
+.at-list__item {
+  .item-content__info-title {
+    font-size: 28px;
+  }
+  .item-content__info-note {
+  	font-size: 25px;
+  	color: #ccc;
+  }
+  .item-extra__icon-arrow {
+  	font-size: 35px;
+  }
+  .item-extra__info {
+    font-size: 25px;
+  }
+}
+
+.at-tabs__item--active {
+  color: #505eb4;
+}
+
+.at-tabs__item-underline {
+  width: 60px;
+  left: 38%;
+  background-color: #505eb4;
+}
+
+.at-search-bar::after {
+  border: none;
+}
+
+.at-list {
+  background-color: transparent;
+}
+
+.at-list::after {
+  border: none;
+}
+
+.at-search-bar {
+  background-color: #505eb4;
+}
+
+.at-search-bar__action {
+  font-size: $fontSize;
+  background-color: #fff;
+  color: #505eb4;
+  margin-left: 20px;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 8px;
+}
+
+.at-search-bar__input {
+  font-size: $fontSize;
+  height: 60px !important;
+  padding: 0 74px;
+  font-size: 28px !important;
+}
+
+.at-search-bar__input-cnt {
+  background-color: #fff;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.at-search-bar__clear {
+  right: 24px;
+  height: 60px;
+  width: 50px;
+  font-size: 28px;
+}
+
+.at-search-bar__placeholder {
+  font-size: $fontSize;
+}
+
+.at-search-bar__placeholder-wrap {
+  background-color: #fff;
+  padding: 0 24px;
+  height: 30px;
+  .at-icon {
+    font-size: $fontSize;
+  }
+}
+
+.at-tabs__body {
+  height: calc(100% - 86.4px);
+}
+
+.at-tabs-pane--active {
+  height: 100%;
+}
+
+.at-indexes__menu-item {
+  color: #505eb4;
+}
+
+.at-noticebar {
+  height: 36px;
+}

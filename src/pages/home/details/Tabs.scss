@@ -1,0 +1,71 @@
+@mixin pane_wrapper {
+  background: white;
+  height: 100%;
+}
+
+@mixin noMore {
+  text-align: center;
+  font-size: 27px;
+  color: #e1e1e1;
+}
+
+.repairman-list__container {
+  height: calc(100% - 336px);
+  .nav-title {
+    height: 84px;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border-bottom: 1px solid #e1e1e1;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    &__item {
+      width: 112px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: color 0.2s;
+      .txt {
+        font-size: 28px;
+        font-family: PingFangSC-Regular;
+        font-weight: 300;
+        color: rgba(153, 153, 153, 1);
+        transition: color 0.2s;
+        &_active {
+          color: #505eb4;
+        }
+      }
+      .border {
+        position: absolute;
+        bottom: 0;
+        width: 0px;
+        height: 2px;
+        background: #505eb4;
+        border-radius: 1px;
+        transition: width 0.2s;
+        &_active {
+          background: #505eb4;
+          width: 60px;
+        }
+      }
+    }
+  }
+  .nav-pane {
+    height: calc(100% - 84px);
+    background: #fafbfc;
+    .scroll-one {
+      @include pane_wrapper;
+      .noMore {
+        @include noMore;
+      }
+    }
+    .pane-two {
+      @include pane_wrapper;
+      .noMore {
+        @include noMore;
+      }
+    }
+  }
+}

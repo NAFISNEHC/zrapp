@@ -1,0 +1,78 @@
+@import "~taro-ui/dist/style/components/flex.scss";
+@mixin city_wrapper {
+  border-radius: 6.4px;
+  border: 1.92px solid #ccc;
+  text-align: center;
+  padding: 6.4px 0;
+  margin: 9.6px;
+  width: calc((100% - 86.4px) / 3);
+  font-size: 28px;
+}
+.wrapper {
+  height: 100%;
+  .search {
+    position: fixed;
+    width: calc(100% - 32px);
+    height: 80px;
+    background: #505eb4;
+    padding: 16px 16px 0 16px;
+    z-index: 100;
+    .search-input {
+      box-sizing: border-box;
+      background: white;
+      width: 100%;
+      height: 64px;
+      padding: 0 3.2px;
+      line-height: 64px;
+      text-align: center;
+      border-radius: 1.92px;
+      color: #666;
+      font-size: 27px;
+    }
+  }  
+  .search-list {
+    margin-top: 96px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 80px);
+    z-index: 99;
+    .noMore {
+      text-align: center;
+      font-size: 27px;
+      color: #666;
+    }
+  }
+  .city-list {
+    margin-top: 96px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 80px);
+    .city-list-head {
+      .header {
+        padding: 10px 24px;
+        width: 100%;
+        color: #7F7F7F;
+        font-size: 24px;
+        background-color: #F7F7F7;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .current-cities {
+        padding: 9.6px;
+        .current-city {
+          @include city_wrapper;
+        }
+      }
+      .hot-cities {
+        float: left;
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        padding: 9.6px;
+        .hot-city {
+          @include city_wrapper;
+        }
+      }
+    }
+  }
+}
